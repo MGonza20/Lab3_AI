@@ -9,7 +9,6 @@ DATASET_SPARSE_RATIO = 20
 DATASET_X_LIM = 10
 
 # Imaginemos que X es dado
-
 def get_random_dataset():
     X = np.linspace(0, DATASET_X_LIM, DATASET_SIZE).reshape((DATASET_SIZE, 1))
     Xr = np.hstack((
