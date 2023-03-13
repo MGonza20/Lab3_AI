@@ -20,6 +20,17 @@ def get_random_dataset():
 
 
 Xr, y = get_random_dataset()
+
+# Add a polynomical feature
+# feature = x^2, grado 2
+Xr = np.hstack((
+    Xr,
+    Xr[:, 1].reshape((Xr.shape[0], 1)) ** 2
+))
+
+#h(xv) = t0 * xv[0] + t1 * xv[1] + t2 * xv[0] ** 2
+
+
 to = np.random.rand(Xr.shape[1], 1)
 
 tf, costs = linreg(
