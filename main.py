@@ -28,7 +28,7 @@ Xr = np.hstack((
     Xr[:, 1].reshape((Xr.shape[0], 1)) ** 2
 ))
 
-#h(xv) = t0 * xv[0] + t1 * xv[1] + t2 * xv[0] ** 2
+#h(xv) = t0 * xv[0] + t1 * xv[1] + t2 * xv[0] ** x^2
 
 
 to = np.random.rand(Xr.shape[1], 1)
